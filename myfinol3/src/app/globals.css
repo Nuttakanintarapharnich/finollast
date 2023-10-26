@@ -1,0 +1,35 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  --foreground-rgb: 0, 0, 0;
+  --background-start-rgb: 214, 219, 220;
+  --background-end-rgb: 255, 255, 255;
+}
+
+@media (prefers-color-scheme: dark) {
+  :root {
+    --foreground-rgb: 255, 255, 255;
+    --background-start-rgb: 0, 0, 0;
+    --background-end-rgb: 0, 0, 0;
+  }
+}
+
+body {
+  color: rgb(var(--foreground-rgb));
+  background: linear-gradient(
+      to bottom,
+      transparent,
+      rgb(var(--background-end-rgb))
+    )
+    rgb(var(--background-start-rgb));
+}
+body {
+  background-image: url('https://image.kkday.com/v2/image/get/w_1900%2Cc_fit/s1.kkday.com/product_23835/20190509065221_qc4hY/jpg');
+  background-size: cover; /* ปรับขนาดรูปภาพให้ครอบเต็มพื้นหลัง */
+  background-repeat: no-repeat; /* ไม่ทำซ้ำรูปภาพ */
+  background-attachment: fixed; /* รูปภาพติดตามหน้าจอเมื่อเลื่อนลง */
+  background-position: center; /* ตำแหน่งรูปภาพในพื้นหลัง */
+  color: #ffe3c6; /* สีตัวหนังสือ */
+}
